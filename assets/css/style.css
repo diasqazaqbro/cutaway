@@ -158,7 +158,6 @@ h6 {
 
 .about__desc a {
    font-weight: 700;
-   font-size: 16px;
    line-height: 20px;
    color: #1976D2;
    text-decoration: none;
@@ -169,9 +168,6 @@ h6 {
 }
 
 .desc__spec {
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 20px;
    color: #A3A3A3;
 }
 
@@ -182,4 +178,21 @@ h6 {
          "m m"
    }
 
+   .about__title,
+   .header__inner,
+   .about__name,
+   .nav__a,
+   .aside__name {
+      font-size: 14px;
+   }
+
+   .about__desc,
+   .aside__nameid {
+      font-size: 12px;
+   }
+
+   .nav {
+      margin: 30px 0;
+      text-align: center;
+   }
 }
