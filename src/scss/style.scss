@@ -3,9 +3,9 @@
 $linkText: #1976D2;
 $greyText: #A3A3A3;
 
-@mixin fontMain {
+@mixin fontMain($wei: 400) {
    font-style: normal;
-   font-weight: 500;
+   font-weight: $wei;
    font-size: 16px;
    line-height: 20px;
 }
@@ -40,7 +40,7 @@ h6 {
 .main {
    display: grid;
    grid-template-columns: 30% 70%;
-   grid-template-rows: 650px;
+   grid-template-rows: 100%;
    grid-template-areas:
       "a m"
 }
@@ -52,6 +52,12 @@ h6 {
    flex-direction: column;
    align-items: center;
    height: 100%;
+
+   .aside__ava {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+   }
 
    .aside__info {
       font-style: normal;
@@ -103,6 +109,8 @@ h6 {
    .aside__social img {
       margin: 0 5px;
       margin-bottom: 100px;
+      width: 35px;
+      height: 35px;
    }
 }
 
@@ -116,6 +124,7 @@ h6 {
    font-size: 18px;
    line-height: 22px;
    margin-bottom: 52px;
+   color: $greyText;
    position: relative;
    &:after {
       content: '';
@@ -138,7 +147,7 @@ h6 {
    grid-area: m;
 
    .about__title {
-      @include fontMain;
+      @include fontMain();
       margin-bottom: 25px;
    }
    
@@ -177,12 +186,251 @@ h6 {
 }
 
 
+.article {
+   .article__title {
+      @include fontMain(600);
+   }
+
+   .article__desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px; 
+      margin: 10px 0;
+   }
+   
+   .article__next {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: $linkText;
+   }
+
+   .article__name {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: $linkText;
+      padding-top: 7px;
+      margin-left: 20px;
+   }
+
+   .article__years {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: $greyText;
+      margin-bottom: 11px;
+      margin-left: 20px;
+
+   }
+
+   .article__img {
+      width: 150px;
+      height: 150px;
+   }
+
+   .article__main {
+      display: flex;
+      height: 150px;
+      width: 100%;
+      background: #212425;
+      text-decoration: none;
+      color: white;
+   }
+
+   .article__inner {
+      margin: 12px 10px;
+   }
+
+   .article__item {
+      height: 55px;
+      background-color: #121212;  
+      margin-top: 24px;
+      &:hover {
+         background-color: #212425;
+      }
+      position: relative;
+   }
+
+   i {
+      border: solid $linkText;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      position: absolute;
+      top: 22px;
+      right: 30px;
+  }
+  
+  .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+  }
+
+}
+
+
+.state {
+   .header__close img {
+      position:relative;
+      top: 3px;
+      right: 0px;
+   }
+
+   .header__page1, .header__page2 {
+      position: relative;
+      top: -10px;
+   }
+
+   .state__ava {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+   }
+
+   .state__name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+   }
+
+   .state__time {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;  
+      color: #A3A3A3;
+   }
+
+   .state__title {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 44px;
+      margin: 30px 0;
+   }
+
+   .state__p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 30px;
+   }
+
+   .state__img {
+      width: 100%;
+      height: 264px;
+      object-fit: cover;
+      margin: 20px 0;
+   }
+
+   .state__readmore {
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      padding: 50px 0;
+      position: relative;
+   &:after {
+      content: '';
+      background-color: $greyText;
+      ;
+      width: 100%;
+      height: 7px;
+      position: absolute;
+      top: 10px;
+      left: 0px;
+   }
+   }
+
+   .state__readmore-item {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #1976D2;
+      margin-top: 10px;
+   }
+
+   .state__share {
+      span {
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 20px;
+         color: #A3A3A3;       
+         position: relative;
+         top: -8px;  
+      }
+   }
+
+   .state__avtor {
+      display: flex;
+      justify-content: space-between;
+   }
+
+
+
+   .state__info {
+      display: flex;
+      .state__name-time {
+         position: relative;
+         top: 7px;
+         left: 12px;
+      }
+   }
+
+   b {
+      font-weight: 600;
+   }
+
+   .state__quote {
+      font-weight: 500;
+      margin-left: 20px;
+      padding: 20px 0;
+   }
+
+}
+
+.undefined {
+   padding: 100px 0;
+   // display: flex;
+   // justify-content: center;
+   // flex-direction: column;
+   .und__title {
+      font-size: 30px;
+      font-weight: 500;
+      text-align: center;
+   }
+
+   .und__art {
+      margin: 10px auto 20px;
+      display: block;
+   }
+
+   .und__button {
+      padding: 10px 20px;
+      
+      outline: none;
+      border: none;
+      text-align: center;
+   }
+
+   .und__button a{
+      color: $linkText;
+      text-decoration: underline;
+      font-size: 18px;
+      font-weight: 600;
+
+      
+   }
+}
+
 
 @media screen and (max-width: 736px) {
    .main {
       grid-template-areas:
          "a a"
-         "m m"
+         "m m";
+      grid-template-rows: 800px
    }
 
    .about__title,
@@ -202,4 +450,41 @@ h6 {
       margin: 30px 0;
       text-align: center;
    }
+
+   .article__desc {
+      display: none;
+   }
+
+   .article__next {
+      margin: 30px 0;
+   }
+
+   .article {
+      padding-bottom: 50px;
+      .article__title {
+         font-size: 14px;
+      }
+
+      .article__item {
+         width: max-content;
+      }
+
+      .article__row {
+         display: none;
+      }
+   }
+
+   .undefined {
+      margin: 10px auto 20px;
+      display: block;
+      text-align: center;
+      .und__title {
+         font-size: 18px;
+      }
+
+      .und__button a  {
+         font-size: 12px;
+      }
+   }
+
 }
