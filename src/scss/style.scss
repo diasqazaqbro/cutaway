@@ -11,13 +11,12 @@ $greyText: #A3A3A3;
 }
 
 body {
+   background: #121212;
    margin: 0;
    font-family: 'Montserrat', sans-serif;
-   background: #121212;
    font-size: 15px;
    line-height: 1.6;
    color: white;
-   font-family: 'Montserrat', sans-serif;
 }
 
 *,
@@ -38,11 +37,17 @@ h6 {
 
 
 .main {
+   background: #121212;
    display: grid;
-   grid-template-columns: 30% 70%;
-   grid-template-rows: 100%;
    grid-template-areas:
-      "a m"
+      "a m";
+   grid-template-columns: 30% 70%;
+   height: 100vh;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15px;
+   line-height: 1.6;
+   color: white;
+
 }
 
 .aside {
@@ -51,7 +56,7 @@ h6 {
    display: flex;
    flex-direction: column;
    align-items: center;
-   height: 100%;
+
 
    .aside__ava {
       width: 100px;
@@ -114,7 +119,7 @@ h6 {
    }
 }
 
-.row {
+.roww {
    margin: 0 30px;
 }
 
@@ -390,6 +395,17 @@ h6 {
 
 }
 
+.projects {
+   .project__title {
+      line-height: 150%;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: #ffffffbf;
+      margin: 10px 0;
+   }
+}
 .undefined {
    padding: 100px 0;
    // display: flex;
