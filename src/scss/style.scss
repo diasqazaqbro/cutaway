@@ -446,7 +446,8 @@ h6 {
       grid-template-areas:
          "a a"
          "m m";
-      grid-template-rows: 800px
+      grid-template-columns: 100%;
+      background: #212425;
    }
 
    .about__title,
