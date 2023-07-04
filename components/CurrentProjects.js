@@ -37,6 +37,7 @@ export default function CurrentProjects() {
 								background: '#212425',
 								borderBottomLeftRadius: 10,
 								borderBottomRightRadius: 10,
+								color: 'white',
 							}}
 						>
 							Веб-сайт со всей нужной информацией обо мне и небольшим блогом.
@@ -104,6 +105,7 @@ export default function CurrentProjects() {
 								background: '#212425',
 								borderBottomRightRadius: 10,
 								borderBottomLeftRadius: 10,
+								color: 'white',
 							}}
 						>
 							Сайт разработан на React. Всю логику писал на Фронте, было сложно

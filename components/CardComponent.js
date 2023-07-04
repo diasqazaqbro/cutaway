@@ -11,7 +11,7 @@ const CardComponent = () => {
 		<>
 			<Card style={{ width: '100%', marginTop: 16 }} loading={loading}>
 				<div className='flex'>
-					<div>
+					<div className='circle'>
 						<Progress percent={65} type='circle' size={85} />
 						<img className='logo' src='/reactLogo.png' />
 					</div>

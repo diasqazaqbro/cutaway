@@ -26,7 +26,7 @@ export default function Aside() {
 					my way
 				</Link>
 			</nav>
-			<div class='social'>
+			{/* <div class='social'>
 				<a href='https://www.instagram.com/diasqazaqbro/'>
 					<img
 						src='https://img.icons8.com/fluency/48/000000/instagram-new.png'
@@ -48,7 +48,7 @@ export default function Aside() {
 						class='soc-item'
 					/>
 				</a>
-			</div>
+			</div> */}
 		</aside>
 	)
 }

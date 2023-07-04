@@ -37,6 +37,7 @@ export default function ArhiveProjects() {
 								background: '#212425',
 								borderBottomRightRadius: 10,
 								borderBottomLeftRadius: 10,
+								color: 'white',
 							}}
 						>
 							Сайт разработан и написан на Php. Был сделан заказ вживую.
