@@ -40,7 +40,7 @@ export default function ArhiveProjects() {
 								color: 'white',
 							}}
 						>
-							Сайт разработан и написан на Php. Был сделан заказ вживую.
+							Сайт разработан и написан на Php. Был сделан заказ вживую
 						</div>
 					</div>
 				</div>
